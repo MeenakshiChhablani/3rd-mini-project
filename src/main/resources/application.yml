@@ -1,0 +1,14 @@
+server.port: 8585
+spring:
+  datasource: 
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+  
+  jpa:
+    properties:
+      hibernate:
+        show-sql: true
+    defer-datasource-initialization: true  
+
